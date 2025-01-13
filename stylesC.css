@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #060420;
+  color: #e4f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh 100vw;
+  width: 100vw 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 40px;
+  color: aquamarine;
+  
+}
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+label {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.movie-container select {
+  background-color: rgba(193, 250, 237, 0.893);
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 2px 10px 2px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  max-width: 90%;
+}
+
+.seat {
+  background-color: #fff;
+  height: 20px;
+  width: 28px;
+  margin: 3px;
+  font-size: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: green;
+}
+
+.seat.sold {
+  background-color: #444451;
+}
+
+.seat:nth-of-type(3) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(3) {
+  margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 0px;
+}
+
+.row {
+  display: flex;
+}
+
+.rowRecliner {
+  display: flex;
+}
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  margin: 3px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(158, 248, 158);
+}
+
+button {
+  background-color: #4CAF50; /* Green background */
+  border-width: 2px;
+  border-color: rgb(15, 62, 28);
+  color: rgb(9, 0, 0); /* White text */
+  padding: 12px 20px; /* Padding for size */
+  text-align: center; /* Centered text */
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline-block for layout */
+  font-size: 18px; /* Font size */
+  margin: 8px 2px; /* Margin for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+button:hover {
+  background-color: #108736; /* Darker green */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
